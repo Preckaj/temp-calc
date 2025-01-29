@@ -14,14 +14,14 @@ def ConsoleText():
             try:
                 number = float(input("What temperature? --> "))
                 result = CelsiustoFahrenheit(number)
-                print(f"It is {result}°F outside!")
+                print(f"It is {result:2f}°F outside!")
             except ValueError:
                 print("Invalid value, please enter a number.")
         elif action == 2:
             try:
                 number = float(input("What temperature? --> "))
                 result = FahrenheitToCelsius(number)
-                print(f"It is {result}°C outside!")
+                print(f"It is {result:2f}°C outside!")
             except ValueError:
                 print("Invalid value, please enter a number.")
         elif action == 3:
